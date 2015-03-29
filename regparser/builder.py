@@ -14,7 +14,6 @@ from regparser.tree import struct
 from regparser.tree.build import build_whole_regtree
 from regparser.tree.xml_parser import reg_text
 
-
 class Builder(object):
     """Methods used to build all versions of a single regulation, their
     layers, etc. It is largely glue code"""
@@ -95,7 +94,6 @@ class Builder(object):
             return reg_text.build_tree(reg_str)
         else:
             return build_whole_regtree(reg_str)
-
 
 class LayerCacheAggregator(object):
     """A lot of the reg tree remains the same between versions; we don't
